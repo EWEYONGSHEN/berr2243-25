@@ -1,3 +1,4 @@
+// EWE YONG SHEN B122320023
 const { MongoClient } = require('mongodb');
 
 async function main() {
@@ -12,7 +13,7 @@ async function main() {
         const db = client.db("testDB");
         const collection = db.collection("users");
 
-        //Insert a document
+        // Insert a document
         await collection.insertOne({ name: "Alice", age: 25 });
         console.log("Document inserted!");
 
@@ -25,3 +26,5 @@ async function main() {
         await client.close();
     }
 }
+
+main();
