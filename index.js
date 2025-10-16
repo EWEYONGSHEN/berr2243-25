@@ -61,7 +61,6 @@ async function main() {
         );
         console.log(`Driver updated with result: ${updateResult}`);
 
-        // EWE YONG SHEN B122320023
         const deleteResult = await db.collection('drivers').deleteOne({ isAvailable: false });
         console.log(`Driver deleted with result: ${deleteResult}`);
 
