@@ -1,3 +1,9 @@
+EWE YONG SHEN B122320023
+
+Question 2: Identify all the mongo operators used in the exercise, then explain the usage for
+each.
+
+Answer:
 MongoDB Operators Used:
 
 1. $gte - "Greater Than or Equal"
@@ -13,6 +19,3 @@ Other MongoDB Methods:
 - find() - Search for drivers
 - updateOne() - Update one driver
 - deleteOne() - Remove one driver
-
-Simple Rule:
-$ symbols = Special commands for searching/updating data
