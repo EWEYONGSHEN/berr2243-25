@@ -1,0 +1,13 @@
+CRUD = Create, Read, Update, Delete - the only 4 things you can do with data.
+
+MongoDB Equivalents:
+CREATE → insertOne() → "Add new driver"
+READ → find() → "Find available drivers"
+UPDATE → updateOne() → "Change driver's rating"
+DELETE → deleteOne() → "Remove driver"
+
+Simple Analogy:
+Write new entries (Create)
+Read what's written (Read)
+Edit existing entries (Update)
+Tear out pages (Delete)

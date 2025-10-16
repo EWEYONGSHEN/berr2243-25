@@ -49,17 +49,21 @@ async function main() {
             console.log(`New driver created with result: ${result}`);
         });
 
-        const updateResult = await db.collection('drivers').updateOne(
-            { name: "John Doe" },
-            { $inc: { rating: 0.1 } }
-        );
-        console.log(`Driver updated with result: ${updateResult}`);
-
         const availableDrivers = await db.collection('drivers').find({
             isAvailable: true,
             rating: { $gte: 4.5 }
         }).toArray();
         console.log("Available drivers:", availableDrivers);
+
+        const updateResult = await db.collection('drivers').updateOne(
+            { name: "John Doe"},
+            { $inc: { rating: 0.1 } }
+        );
+        console.log(`Driver updated with result: ${updateResult}`);
+
+        // EWE YONG SHEN B122320023
+        const deleteResult = await db.collection('drivers').deleteOne({ isAvailable: false });
+        console.log(`Driver deleted with result: ${deleteResult}`);
 
     }   finally {
         await client.close();

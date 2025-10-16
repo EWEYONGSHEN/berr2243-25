@@ -1,0 +1,18 @@
+MongoDB Operators Used:
+
+1. $gte - "Greater Than or Equal"
+   Example: rating: { $gte: 4.5 }
+   Meaning: "Find drivers with at least 4.5 stars"
+
+2. $inc - "Increment" 
+   Example: { $inc: { rating: 0.1 } }
+   Meaning: "Add 0.1 to the current rating"
+
+Other MongoDB Methods:
+- insertOne() - Add one driver
+- find() - Search for drivers
+- updateOne() - Update one driver
+- deleteOne() - Remove one driver
+
+Simple Rule:
+$ symbols = Special commands for searching/updating data
