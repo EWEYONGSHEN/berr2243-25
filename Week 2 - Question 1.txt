@@ -1,3 +1,9 @@
+EWE YONG SHEN B122320023
+
+Question 1: Explain what is CRUD operations and how it is relates to the mongo functions in
+the exercise.
+
+Answer:
 CRUD = Create, Read, Update, Delete - the only 4 things you can do with data.
 
 MongoDB Equivalents:
